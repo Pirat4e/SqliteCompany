@@ -95,7 +95,7 @@ public class ListCompaniesActivity extends Activity implements OnItemLongClickLi
             case R.id.btn_post_company:
                 // Tag used to cancel the request
                 String tag_json_obj = "json_obj_req";
-                String url = "http://api.androidhive.info/volley/person_object.json";
+                String url = "http://EXAMPLE";
 
                 final ProgressDialog pDialog = new ProgressDialog(this);
                 pDialog.setMessage("Loading...");
