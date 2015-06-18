@@ -82,7 +82,7 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
     public Cursor getAllData() {
-        String selectQuery = "Select * from "+ TABLE_COMPANIES ;
+        String selectQuery = "Select * from "+ TABLE_COMPANIES + TABLE_EMPLOYEES ;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
         return cursor;
